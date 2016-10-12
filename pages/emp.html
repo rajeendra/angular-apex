@@ -1,0 +1,55 @@
+<!-- emp.html -->
+
+<script type="text/javascript">
+</script>
+
+<script>
+function myEmpFunction()
+{
+   alert("EMP Page is loaded");
+}
+</script>
+
+<body onload="myEmpFunction()">
+
+<div ng-controller="empController">
+    <div class="jumbotron text-center">
+        <h1>Employee</h1>
+
+        <p>{{ message }}</p>
+    </div>
+
+	<form name="empForm" class="form-horizontal" role="form" ng-submit="addRow()">
+		<div class="form-group">
+			<label class="col-md-2 control-label">Name</label>
+			<div class="col-md-4">
+				<input type="text" class="form-control" name="ename"
+					ng-model="ename" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label">Job</label>
+			<div class="col-md-4">
+				<input type="text" class="form-control" name="job"
+					ng-model="job" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label">Salery</label>
+			<div class="col-md-4">
+				<input type="text" class="form-control" name="sal"
+					ng-model="sal" />
+			</div>
+		</div>
+		<div class="form-group">								
+			<div style="padding-left:110px">
+				<input type="submit" value="Submit" class="btn btn-primary"/>
+			</div>
+		</div>
+	</form>
+
+
+</div>
+
+</body>
+

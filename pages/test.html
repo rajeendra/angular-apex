@@ -1,0 +1,19 @@
+<!-- test.html -->
+    <div class="jumbotron text-center">
+        <h1>Test Page</h1>
+
+        <p>{{ message }}</p>
+
+
+    </div>
+
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.uri.$ref }}</td>
+    <td>{{ x.empno }}</td>
+    <td>{{ x.ename }}</td>
+    <td>{{ x.job }}</td>
+    <td>{{ x.sal }}</td>
+    <td> <li><a href="#/employee/{{x.empno}}" ng-click="setCurrentUser($index)"><i class="fa fa-comment"></i> Contactx</a></li></td>
+  </tr>
+</table>
